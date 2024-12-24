@@ -1,7 +1,7 @@
 package books;
 
 import org.testng.Assert;
-
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -20,7 +20,7 @@ public class TC_DWS_005_Test extends BaseCLass {
 	   hp.getBooksLink().click();
 	   Assert.assertEquals(driver.getTitle(),"Demo Web Shop. Books");
 	   test.log(Status.PASS, "Books page is displayed sucessfully");
-	    Reporter.lod("Edited in Github",true);
+	    Reporter.log("Edited in Github",true);
 	    
    }
 
